@@ -1,0 +1,172 @@
+/*Style sheet*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+ul{
+  padding: 0px;
+  margin: 0px;
+}
+p{
+  margin: 0px;
+}
+.mg-top-70{
+  margin-top: 70px;
+}
+.mg-top-60{
+  margin-top: 60px;
+}
+.mg-top-50{
+  margin-top: 50px;
+}
+.mg-top-40{
+  margin-top: 40px;
+}
+.mg-top-30{
+  margin-top: 30px;
+}
+.mg-bot-50{
+  margin-bottom: 50px;
+}
+.mg-bot-40{
+  margin-bottom: 40px;
+}
+.mg-bot-25{
+  margin-bottom: 25px;
+}
+.mg-bot-15{
+  margin-bottom: 15px;
+}
+.mg-bot-10{
+  margin-bottom: 10px;
+}
+/*main container*/
+#canvas{
+  position: absolute;
+  top: -800px;
+  left: -800px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -100;
+}
+.main{
+  margin: 20px 0px;
+}
+.main .container-cus{
+  width: 70%;
+  margin: auto;
+}
+.main .text{
+
+}
+.main .text h1{
+  color: #002e5f;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0px 120px;
+  margin-bottom: 0px;
+}
+.main .steps{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+.main .steps .box{
+
+}
+.main .steps .box p{
+  color: #002e5f;
+  font-size: 17px;
+  font-weight: 500;
+}
+.main .steps .box p span{
+  font-weight: 400;
+  margin-left: 12px;
+}
+.main .steps .box p input{
+  font-size: 15px;
+  padding: 4px 18px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #002e5f;
+  outline: none;
+  width: 212px;
+}
+.main .steps .box p a{
+  width: 197px;
+  height: 33px;
+  display: inline-block;
+  background: #002e5f;
+  color: white;
+  padding: 6px 40px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 32px;
+  text-align: center;
+}
+.main .cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.main .cards .card-box{
+  position: relative;
+}
+.main .cards .card-box img{
+  width: 100%;
+}
+.main .cards .card-box input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  margin: auto;
+  opacity: 0;
+  cursor: pointer;
+}
+.main .cards .card-box .check-imgs{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.main .cards .card-box .check-imgs img{
+  width: 24px;
+  display: block;
+}
+.main .cards .card-box .check-imgs .uncheck{
+
+}
+.main .cards .card-box .check-imgs .check{
+  display: none;
+}
+.main .cards .card-box input:checked + .check-imgs .uncheck{
+  display: none;
+}
+.main .cards .card-box input:checked + .check-imgs .check{
+  display: block;
+}
+@media (min-width: 0px) and (max-width: 678px){
+  .main .container-cus{
+    width: 94%;
+  }
+  .main .text h1{
+    font-size: 1.5rem;
+    padding: 0px 0px;
+  }
+  .main .steps{
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+  }
+  .main .steps .box{
+    text-align: left !important;
+  }
+  .main .cards{
+    grid-template-columns: 1fr;
+  }
+}

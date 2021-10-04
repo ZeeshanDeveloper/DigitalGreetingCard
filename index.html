@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Doctor - New Year Card</title>
+
+  <!--bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="container-cus">
+      <div class="text">
+        <h1>Send your love to family and friends with personalized New Year cards with your name</h1>
+      </div>
+      <div class="steps">
+        <div class="box">
+          <p>Step 1<span>Pick a Design</span></p>
+        </div>
+        <div class="box" style="text-align: center;">
+          <p>Step 2<span><input type="text" id="name" placeholder="Enter Name" /></span></p>
+        </div>
+        <div class="box" style="text-align: right;">
+          <p>Step 3<span><a id="link" href="#" onclick="to_image()">Download Card</a></span></p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-box">
+          <img src="img/card-1.jpg" alt="card">
+          <input type="radio" name="card" value="0">
+          <div class="check-imgs">
+            <img src="img/icon/un-check.png" class="uncheck">
+            <img src="img/icon/check.png" class="check">
+          </div>
+        </div>
+        <div class="card-box">
+          <img src="img/card-2.jpg" alt="card">
+          <input type="radio" name="card" value="1">
+          <div class="check-imgs">
+            <img src="img/icon/un-check.png" class="uncheck">
+            <img src="img/icon/check.png" class="check">
+          </div>
+        </div>
+        <div class="card-box">
+          <img src="img/card-3.jpg" alt="card">
+          <input type="radio" name="card" value="2">
+          <div class="check-imgs">
+            <img src="img/icon/un-check.png" class="uncheck">
+            <img src="img/icon/check.png" class="check">
+          </div>
+        </div>
+        <div class="card-box">
+          <img src="img/card-4.jpg" alt="card">
+          <input type="radio" name="card" value="3">
+          <div class="check-imgs">
+            <img src="img/icon/un-check.png" class="uncheck">
+            <img src="img/icon/check.png" class="check">
+          </div>
+        </div>
+        <div class="card-box">
+          <img src="img/card-5.jpg" alt="card">
+          <input type="radio" name="card" value="4">
+          <div class="check-imgs">
+            <img src="img/icon/un-check.png" class="uncheck">
+            <img src="img/icon/check.png" class="check">
+          </div>
+        </div>
+        <div class="card-box">
+          <img src="img/card-6.jpg" alt="card">
+          <input type="radio" name="card" value="5">
+          <div class="check-imgs">
+            <img src="img/icon/un-check.png" class="uncheck">
+            <img src="img/icon/check.png" class="check">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <canvas id="canvas"></canvas>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
